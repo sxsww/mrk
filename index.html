@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мужской взгляд</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- шапка -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">✂ Мужской взгляд</a>
+            <nav class="nav" id="nav">
+                <a href="#home">Главная</a>
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <button id="openModal" class="book-button">Записаться</button>
+            <button id="burger">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- слайдер -->
+        <section class="container" id="home">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="img/slide1.jpg" alt="">
+                    <div class="slide-text">
+                        <h1>Стрижка с характером</h1>
+                        <p>Барбершоп «Мужской взгляд»</p>
+                        <a href="#services" class="slider-link">Наши услуги</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide2.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Твой стиль — наша работа</h2>
+                        <p>Стрижки и уход за бородой</p>
+                        <a href="#services" class="slider-link">Наши услуги</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/slide3.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Время обновить образ</h2>
+                        <p>Ждём тебя в Казани</p>
+                        <a href="#services" class="slider-link">Наши услуги</a>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button id="prev">←</button>
+                    <button id="next">→</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- услуги - вкладки -->
+        <section class="container" id="services">
+            <h2>Наши услуги</h2>
+            <div class="tabs">
+                <button class="tab active" data-tab="adults">Для взрослых</button>
+                <button class="tab" data-tab="children">Для детей</button>
+            </div>
+
+            <div class="tab-content active" id="adults">
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/service1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Мужская стрижка</h3>
+                            <p class="price">от 1 500 ₽</p>
+                            <details class="details">
+                                <summary>Подробнее</summary>
+                                <p>Классическая или современная стрижка на ваш выбор</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/service2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Оформление бороды</h3>
+                            <p class="price">от 900 ₽</p>
+                            <details class="details">
+                                <summary>Подробнее</summary>
+                                <p>Подравнивание и аккуратная форма бороды</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/service3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Уход за волосами</h3>
+                            <p class="price">от 1 200 ₽</p>
+                            <details class="details">
+                                <summary>Подробнее</summary>
+                                <p>Мытьё, уход и лёгкая укладка волос</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="children">
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/service4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Детская стрижка</h3>
+                            <p class="price">от 900 ₽</p>
+                            <details class="details">
+                                <summary>Подробнее</summary>
+                                <p>Аккуратная стрижка для маленьких клиентов.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/service5.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Стрижка подростка</h3>
+                            <p class="price">от 1 100 ₽</p>
+                            <details class="details">
+                                <summary>Подробнее</summary>
+                                <p>Стильная стрижка с учётом пожеланий подростка.</p>
+                            </details>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/service6.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Детская укладка</h3>
+                            <p class="price">от 600 ₽</p>
+                            <details class="details">
+                                <summary>Подробнее</summary>
+                                <p>Быстрая укладка для праздника или события.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- аккордеон -->
+        <section class="container" id="faq">
+            <h2>Вопрос/ответ</h2>
+            <div class="question">
+                <button class="question-title">Нужна ли предварительная запись?<span class="plus">+</span></button>
+                <div class="answer">Лучше записаться заранее.</div>
+            </div>
+            <div class="question">
+                <button class="question-title">Сколько длится стрижка?<span class="plus">+</span></button>
+                <div class="answer">Обычно 40–60 минут.</div>
+            </div>
+            <div class="question">
+                <button class="question-title">Можно ли прийти с ребёнком?<span class="plus">+</span></button>
+                <div class="answer">Да, у нас есть детские стрижки.</div>
+            </div>
+            <div class="question">
+                <button class="question-title">Как можно оплатить услугу?<span class="plus">+</span></button>
+                <div class="answer">Картой или наличными.</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- подвал -->
+    <footer id="contacts">
+        <div class="container footer-inner">
+            <div><strong>✂ Мужской взгляд</strong>
+                <p>Казань · +7 (914) 236-51-88</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="#home">Главная</a>
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="social"><a href="https://vk.com/" target="_blank">VK</a><a href="https://t.me/"
+                    target="_blank">Telegram</a></div>
+            <p>Разработчик: Маркова Юлия</p>
+        </div>
+    </footer>
+
+    <!-- модалка -->
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <button id="closeModal" class="close-modal">×</button>
+            <h2>Запись на приём</h2>
+            <form id="form" novalidate>
+                <label for="name">Имя</label>
+                <input id="name" type="text" placeholder="Ваше имя">
+                <p class="error" id="nameError"></p>
+
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="mail@example.ru">
+                <p class="error" id="emailError"></p>
+
+                <button type="submit">Отправить</button>
+                <p class="success" id="success"></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
